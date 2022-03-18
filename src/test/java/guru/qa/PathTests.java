@@ -7,9 +7,10 @@ import org.junit.jupiter.params.provider.ValueSource;
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
-@DisplayName("Opening Alibaba pages use categories links")
+@DisplayName("Open Alibaba pages")
 public class PathTests extends BaseTest {
 
+    @DisplayName("Open consumer electronics pages")
     @ParameterizedTest(name = "Opening \"{0}\" page")
     @ValueSource(strings = {"Speakers & Accessories", "Camera, Photo & Accessories", "Computer Hardware & Software"})
     void openTabsByCategories(String pageName) {
@@ -18,6 +19,7 @@ public class PathTests extends BaseTest {
     }
 
     @Test
+    @DisplayName("Day calculate")
     void secondTest() {
     }
 }
