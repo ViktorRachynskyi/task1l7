@@ -19,7 +19,7 @@ public class PathTests extends BaseTest {
     }
 
     @Test
-    @DisplayName("Day calculate")
+    @DisplayName("Added test")
     void secondTest() {
     }
 }
