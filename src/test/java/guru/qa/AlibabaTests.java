@@ -14,6 +14,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 class AlibabaTests extends BaseTest {
 
+    @Tag("electronic")
     @DisplayName("Open consumer electronics pages")
     @ParameterizedTest(name = "Open \"{0}\" page")
     @ValueSource(strings = {"Camera, Photo & Accessories", "Computer Hardware & Software"})
@@ -22,6 +23,7 @@ class AlibabaTests extends BaseTest {
         $("h1.path").shouldHave(text(pageName));
     }
 
+    @Tag("authorization")
     @DisplayName("Verification frame is appeared")
     @ParameterizedTest(name = "Check secure frame use email \"{0}\"")
     @MethodSource("credentials")
