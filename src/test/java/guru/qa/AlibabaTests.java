@@ -41,4 +41,10 @@ class AlibabaTests extends BaseTest {
                 Arguments.of("test-mail3@gmail.com", "test_pass3")
         );
     }
+
+    @Test
+    @Disabled
+    void disabledTest() {
+        System.out.println("This test should be disabled!");
+    }
 }
