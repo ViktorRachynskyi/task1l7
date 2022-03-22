@@ -3,6 +3,7 @@ package guru.qa;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -41,6 +42,17 @@ class AlibabaTests extends BaseTest {
                 Arguments.of("test-mail2@gmail.com", "test_pass2"),
                 Arguments.of("test-mail3@gmail.com", "test_pass3")
         );
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "January, 15",
+            "February, 0x05",
+            "July, 29"
+    })
+    void csvSourceTest(String month, int day) {
+        System.out.println("Month: " + month + "\n" + "Day: " +day);
+
     }
 
     @Test
