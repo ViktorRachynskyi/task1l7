@@ -37,6 +37,7 @@ class AlibabaTests extends BaseTest {
     }
 
     public static Stream<Arguments> credentials() {
+
         return Stream.of(
                 Arguments.of("test-mail1@gmail.com", "test_pass1"),
                 Arguments.of("test-mail2@gmail.com", "test_pass2"),
