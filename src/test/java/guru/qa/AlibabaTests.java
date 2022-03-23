@@ -23,6 +23,9 @@ class AlibabaTests extends BaseTest {
     public void openTabsByCategories(String pageName) {
         $x("//span[contains(text(),'" + pageName + "')]").click();
         $("h1.path").shouldHave(text(pageName));
+        System.out.println("");
+        System.out.println("");
+        System.out.println("");
     }
 
     @Tag("authorization")
@@ -52,7 +55,7 @@ class AlibabaTests extends BaseTest {
             "July, 29"
     })
     void csvSourceTest(String month, int day) {
-        System.out.println("Month: " + month + "\n" + "Day: " +day);
+        System.out.println("Month: " + month + "\n" + "Day: " + day);
 
     }
 
