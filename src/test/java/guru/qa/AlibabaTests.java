@@ -25,6 +25,7 @@ class AlibabaTests extends BaseTest {
         $("h1.path").shouldHave(text(pageName));
         System.out.println("");
         System.out.println("");
+        System.out.println("");
     }
 
     @Tag("authorization")
