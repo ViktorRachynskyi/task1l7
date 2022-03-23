@@ -23,6 +23,7 @@ class AlibabaTests extends BaseTest {
     public void openTabsByCategories(String pageName) {
         $x("//span[contains(text(),'" + pageName + "')]").click();
         $("h1.path").shouldHave(text(pageName));
+        System.out.println("");
     }
 
     @Tag("authorization")
