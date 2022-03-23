@@ -38,6 +38,7 @@ class AlibabaTests extends BaseTest {
 
     public static Stream<Arguments> credentials() {
         System.out.println("empty sout");
+        System.out.println("!!!");
         System.out.println("world");
         System.out.println("hello");
         return Stream.of(
