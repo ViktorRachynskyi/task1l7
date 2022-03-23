@@ -37,16 +37,12 @@ class AlibabaTests extends BaseTest {
     }
 
     public static Stream<Arguments> credentials() {
-        System.out.println("empty sout");
-        System.out.println("!!!");
-        System.out.println("world");
-        System.out.println("hello");
+
         return Stream.of(
                 Arguments.of("test-mail1@gmail.com", "test_pass1"),
                 Arguments.of("test-mail2@gmail.com", "test_pass2"),
                 Arguments.of("test-mail3@gmail.com", "test_pass3")
         );
-
     }
 
     @ParameterizedTest
